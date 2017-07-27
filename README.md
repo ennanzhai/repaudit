@@ -7,12 +7,12 @@ by allowing administrators to proactively audit the replication
 deployments of interest. 
 
 In particular, RepAudit consists of three main components: 
-1) a declarative domain-specific language, RAL, for cloud administrators 
+1) A declarative domain-specific language, RAL, for cloud administrators 
 to write auditing programs expressing diverse auditing tasks; 
-2) a high-performance RAL
+2) A high-performance RAL
 auditing engine that generates the auditing results by accurately and 
 efficiently analyzing the underlying structures of the target replication 
 deployments; and
-3) an RAL-code generator that can automatically produce 
+3) An RAL-code generator that can automatically produce 
 complex RAL programs
 based on easily written specifications.
