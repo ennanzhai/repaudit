@@ -1,0 +1,9 @@
+*.exe
+*.gch
+*.ral
+*.o
+*.obj
+output  #output file
+FaultGraph
+wcnf_maxino_result
+wcnf_output

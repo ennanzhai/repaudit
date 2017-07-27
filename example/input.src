@@ -1,0 +1,13 @@
+//服务器根据 IP address 初始化
+let s1 = server("172.28.228.21");
+let s2 = server("172.28.228.24");
+//初始化一个 replication
+let rep = [s1, s2];
+let ft = FailureGraph(rep);   // 生成 fault graph
+let list = RankRCG(ft, 2, "SIZE");
+let n = FailProb(ft);
+let list1 = RecRep(rep, 2);
+let list2 = RankNode(ft, 3);
+print(list);
+print(list1);
+print(list2);

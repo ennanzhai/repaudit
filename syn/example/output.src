@@ -1,0 +1,15 @@
+// {2017-04-01 12.59 PM} 
+// for timing topo A, B, C (3456, 27648, 65536)
+
+let s1 = server("172.28.228.1");
+let s2 = server("172.28.228.2");
+let s3 = server("172.28.228.3");
+let s4 = server("172.28.228.4");
+let rep = [s1, s2, s3, s4];
+let ft = FailureGraph(rep);
+let posConstr = [];
+let negConstr = [];
+//Implement this statement to output RAL program: Goal(ft, 0.009, posConstr, negConstr, "AddPath");
+let newSwitch1 = switch("192.228.28.47");
+let e1 = edge(s1, newSwitch1);
+AddEdge(ft, e1);

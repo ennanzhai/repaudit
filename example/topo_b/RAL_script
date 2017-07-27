@@ -1,0 +1,10 @@
+//create replica server instances
+let s1 = server("172.28.228.1");
+let rep = list(s1, 3456);
+
+//generate fault graph
+let ft = FailureGraph(rep);
+
+//get RCG list with given size and ranking metric
+let ranklist = RankRCG(ft, 20, "SIZE");
+//print(ranklist);

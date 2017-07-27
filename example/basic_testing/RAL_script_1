@@ -1,0 +1,6 @@
+let s1 = server("172.28.228.21");
+let s2 = server("172.28.228.23");
+let rep = [s1, s2];
+let ft = FailureGraph(rep); 
+let list = RankRCG(ft, 2, "SIZE");
+print(list);

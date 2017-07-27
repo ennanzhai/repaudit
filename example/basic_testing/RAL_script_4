@@ -1,0 +1,6 @@
+let s1 = server("172.28.228.21");
+let s2 = server("172.28.228.24");
+let rep = [s1, s2];
+let ft = FailureGraph(rep); 
+let list2 = RankNode(ft, 3);
+print(list2);

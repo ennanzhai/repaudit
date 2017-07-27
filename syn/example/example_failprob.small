@@ -1,0 +1,18 @@
+//create replica server instances
+let s1 = server("172.28.228.21");
+let s2 = server("172.28.228.22");
+//let s3 = server("172.28.228.209");
+//let s4 = server("172.28.228.210");
+//let s5 = server("172.28.228.211");
+//let s6 = server("172.28.228.212");
+
+//replica server list
+let rep = [s1, s2];
+
+//generate fault graph
+let ft = FailureGraph(rep);
+
+//get the failure probability for the fault graph we just generated
+let n = FailProb(ft);
+
+print(n);

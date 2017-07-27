@@ -1,0 +1,12 @@
+let s1 = server("172.28.228.21");
+let s2 = server("172.28.228.24");
+let rep = [s1, s2];
+let ft = FailureGraph(rep); 
+let list = RankRCG(ft, 2, "SIZE");
+let n = FailProb(ft);
+let list1 = RecRep(rep, 2);
+let list2 = RankNode(ft, 3);
+print(list);
+print(n);
+print(list1);
+print(list2);
