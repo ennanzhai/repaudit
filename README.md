@@ -6,6 +6,8 @@ manages to prevent correlated failure risks before service outages occur,
 by allowing administrators to proactively audit the replication 
 deployments of interest. 
 
+
+
 In particular, RepAudit consists of three main components: 
 1) A declarative domain-specific language, RAL, for cloud administrators 
 to write auditing programs expressing diverse auditing tasks; 
